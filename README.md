@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Layer Next – Interior Design Website  
 
-## Getting Started
+A modern, minimal, and elegant website for **Layer Next**, built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/).  
+This project focuses on premium aesthetics, smooth animations, and responsive layouts — highlighting our brand philosophy of **engineered design, clean elegance, and uncompromised quality**.  
 
-First, run the development server:
+---
+
+## 🚀 Features  
+
+- **Responsive Design** – Optimized for mobile, tablet, and desktop.  
+- **Hero Section with CTA** – Clear call to action for consultations.  
+- **About / Essence** – Introduces the brand story and values.  
+- **Philosophy Section** – Showcases our design philosophy with layered typography and modern UI.  
+- **Contact Section** – Easy-to-reach form with brand styling.  
+- **Footer** – Minimal, elegant, and functional.  
+- **Image Optimization** – Using Next.js `<Image />` for fast loading.  
+- **Animations** – Subtle motion effects for premium feel.  
+
+---
+
+## 🛠️ Tech Stack  
+
+- [Next.js 14](https://nextjs.org/) – React framework for production-grade apps.  
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework.  
+- [Framer Motion](https://www.framer.com/motion/) – Smooth animations & transitions.  
+
+---
+
+## 📂 Project Structure  
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+layer-next/
+├── public/           # Static assets (images, icons, etc.)
+├── src/
+│   ├── app/          # Next.js app router pages
+│   ├── components/   # Reusable UI components
+│   ├── styles/       # Global styles
+│   └── ...
+├── package.json
+└── README.md
+```
+## ⚡ Getting Started
+
+1. Clone the repo
+```bash
+git clone https://github.com/yourusername/layer-next.git
+cd layer-next
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install Dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Now open http://localhost:3000
 
-## Learn More
+## 📦 Build for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Design Philosophy
+- At Layer Next, design is more than visuals — it’s about:
+- Engineered design – intentional, functional, precise.
+- Clean elegance – timeless and uncluttered.
+- Textures & emotions – creating spaces you can feel.
+- Uncompromised quality – from finish to detail.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 👨‍💻 Author
+Built with ❤️ by Layer Next 
 
-## Deploy on Vercel
+## 📜 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is open-source and free to use.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built using Next.js, Typescript, Tailwind, Motion
+
+## Contact
+
+For questions or suggestions, reach out:
+
+📧 Email: anirudhgirish08@gmail.com
+
+For issues reach out to me
