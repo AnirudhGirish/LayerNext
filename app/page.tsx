@@ -3,14 +3,18 @@ import ProcessSection from "../components/ProcessSection";
 import Preloader from "@/components/PreLoader";
 import AboutEssence from "@/components/AboutEssence";
 import PhilosophySection from "@/components/Philosophy";
+import Link from "next/link";
+import Footer from "@/components/Footer";
+import Showcase from "@/components/Feature";
+
 
 export default function Home() {
   return (
     <>
       <Preloader />
-      <div className="w-screen h-screen bg-[#000814]/97 flex screen-div">
+      <div className="w-screen h-screen bg-[#000814]/97 flex screen-div border-b-2 border-[#b99f5a]">
         <div className="w-screen h-screen flex flex-col">
-          <div className="flex">
+          <div className="flex border-b border-[#b99f5a]/70">
             <div className="w-10 h-10 block lg:hidden mt-4 mb-4 mx-auto bg-transparent shadow-2xl shadow-black">
               <Image
                 src={"/image.png"}
@@ -46,9 +50,11 @@ export default function Home() {
               <p className="hidden lg:block text-white lg:text-white/75 text-md md:text-xl font-mono hover:text-white transition duration-300 mt-5 bg-[#000814]/50 rounded-lg">
                 A seamless blend of creativity, craftsmanship, and innovation
               </p>
-              <button className="bg-[#000814]/75 text-white text-xl px-10 py-4 mt-4 lg:mt-8 lg:text-2xl lg:px-14 lg:py-6 rounded-2xl shadow-2xl shadow-black hover:bg-[#000814] hover:font-semibold transition duration-300">
-                Begin My Design Journey →
-              </button>
+              <Link href={"/consult"}>
+                <button className="bg-[#000814]/75 text-white text-xl px-10 py-4 mt-4 border border-[#b99f5a]/60 lg:mt-10 lg:text-2xl lg:px-14 lg:py-6 rounded-2xl shadow-2xl shadow-black hover:bg-[#000814] hover:border-[#b99f5a]/9s0 hover:font-semibold transition duration-300">
+                  Begin My Design Journey <span className="text-[#b99f5a]">&nbsp;→</span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -56,6 +62,8 @@ export default function Home() {
       <AboutEssence />
       <ProcessSection />
       <PhilosophySection />
+      <Showcase />
+      <Footer />
     </>
   );
 }

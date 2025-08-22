@@ -2,7 +2,7 @@ export default function AboutEssence() {
   return (
     <section
       id="about"
-      className="relative min-h-screen flex items-center justify-center bg-[#000814] border-t border-white/10"
+      className="relative min-h-screen flex items-center justify-center bg-[#000814] overflow-hidden border-b-1 border-[#eacb71]/80"
     >
       <div className="relative mx-auto max-w-6xl px-6 py-20 lg:py-28">
         {/* Heading */}
@@ -20,7 +20,7 @@ export default function AboutEssence() {
         </p>
 
         {/* Story */}
-        <p className="mt-6 max-w-4xl text-base md:text-lg text-white/70 leading-relaxed">
+        <p className="hidden md:block mt-6 max-w-4xl text-base md:text-lg text-white/70 leading-relaxed">
           We are more than just an interior design studio. We are creators of
           experiences, blending timeless aesthetics, innovative engineering,
           and modern craftsmanship to shape interiors that inspire, function,
@@ -59,6 +59,20 @@ export default function AboutEssence() {
           ))}
         </div>
       </div>
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, rgba(206,184,110,0.4) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(206,184,110,0.4) 1px, transparent 1px)
+          `,
+          backgroundSize: "65px 65px",
+          maskImage:
+            "linear-gradient(to bottom, transparent 0%, transparent 65%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0.8) 100%)",
+          WebkitMaskImage:
+            "linear-gradient(to bottom, transparent 0%, transparent 65%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0.8) 100%)",
+        }}
+      />
     </section>
   );
 }

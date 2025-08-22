@@ -3,7 +3,7 @@ import bg2 from "@/public/bg2.png";
 
 export default function PhilosophySection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#000814]/97 px-4 py-12">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#000814]/97 px-4 py-12 border-y border-[#b99f5a]" id="philosophy">
       <div className="absolute right-2 bottom-2 sm:right-5 sm:bottom-5 w-40 sm:w-80 md:w-[350px]">
         <Image
           src={bg2}
@@ -24,7 +24,8 @@ export default function PhilosophySection() {
         <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed">
           At <span className="font-bold text-[#b99f5a]/97">Layer Next</span>, we believe great design is not just seen — it’s felt.
           Our philosophy is rooted in <span className="text-blue-300">engineered designs</span>, where every detail is
-          carefully considered, every layer intentional. We create interiors
+          carefully considered, every layer intentional. 
+          We create interiors
           that balance <span className="text-blue-300">clean, elegant aesthetics</span> with the <span className="text-blue-300">emotions hidden in
           textures and materials</span>. With uncompromising standards of <span className="text-blue-300">quality,
           finish, and craftsmanship</span>, our work ensures that each space is not

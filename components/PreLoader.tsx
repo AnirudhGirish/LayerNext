@@ -10,7 +10,7 @@ export default function Preloader() {
     const timer = setTimeout(() => {
       setAnimateOut(true);
       setTimeout(() => setLoading(false), 1000);
-    }, 3000);
+    }, 2500);
 
     return () => clearTimeout(timer);
   }, []);
